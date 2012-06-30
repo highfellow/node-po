@@ -1,0 +1,4 @@
+#!/bin/sh
+# script to run po2json.js
+myPath=${0%%/po2json}
+node $myPath/po2json.js "$@"
