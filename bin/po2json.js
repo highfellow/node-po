@@ -1,3 +1,5 @@
+// Convert po files to json format. printed on standard output.
+
 util=require('util');
 
 // Get command line args and load library.
@@ -10,7 +12,7 @@ argv.shift(); argv.shift(); // remove first two items.
 var poFile = null, pretty = false, argc=0;
 argv.forEach(function(arg) {
   if (arg == '-p') {
-    pretty = true;
+    pretty = true; // TODO - not working yet.
   }
   else {
     if (argc == 0) {
